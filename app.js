@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/",(req, res) => {
-    res.send("Hello this my BCA HELLO WORLD cicd pipeline project");
+    res.send("CICD PIPELINE IS WORKING SUCCESSFULLY ON AWS ECS");
 });
 
 app.listen(3000, () => {
