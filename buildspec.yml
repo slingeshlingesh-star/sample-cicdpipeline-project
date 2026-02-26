@@ -1,6 +1,10 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      docker: 20
+
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
@@ -11,16 +15,11 @@ phases:
 
   build:
     commands:
-      - echo Build started on date
+      - echo Build started
       - docker build -t cicd-docker-repo .
       - docker tag cicd-docker-repo:latest $REPOSITORY_URI:$IMAGE_TAG
 
   post_build:
     commands:
-      - echo Pushing Docker image...
+      - echo Pushing image
       - docker push $REPOSITORY_URI:$IMAGE_TAG
-      - printf '[{"name":"cicd-container","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
-
-artifacts:
-  files:
-    - imagedefinitions.json
