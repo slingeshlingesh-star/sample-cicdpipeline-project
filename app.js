@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My small Website</title>
+    <title>My  Website</title>
     <style>
       :root{
         --card-bg: rgba(255,255,255,0.10);
