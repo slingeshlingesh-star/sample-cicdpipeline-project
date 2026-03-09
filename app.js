@@ -279,7 +279,7 @@ app.get("/", (req, res) => {
   `);
 });
 
-app.get("/health", (req, res) => res.send("OK"));
+app.get("/health", (req, res) => res.send("VANAKAM NEENGA NALLA ERUKINGA"));
 
 app.listen(3000, "0.0.0.0", () => {
   console.log("server running on port 3000");
