@@ -185,7 +185,7 @@ app.get("/", (req, res) => {
         <div class="brand">
           <div class="logo">🚀</div>
           <div>
-            <h1>My Small Website</h1>
+            <h1>FINAL YEAR PROJECT</h1>
             <p class="sub">Running on Docker + EC2 (CI/CD Pipeline)</p>
           </div>
         </div>
