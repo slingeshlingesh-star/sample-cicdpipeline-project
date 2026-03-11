@@ -12,7 +12,7 @@ phases:
   build:
     commands:
       - echo Build started
-      - docker build -t cicd-docker-repo .
+      - docker build --no-cache -t cicd-docker-repo .
       - docker tag cicd-docker-repo:latest $REPOSITORY_URI:$IMAGE_TAG
 
   post_build:
