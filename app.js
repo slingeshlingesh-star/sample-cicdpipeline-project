@@ -215,7 +215,7 @@ app.get("/", (req, res) => {
           <div class="kpi">
             <div class="stat">
               <div class="label">Version</div>
-              <div class="value" id="ver">v2</div>
+              <div class="value" id="ver">v3</div>
             </div>
             <div class="stat">
               <div class="label">Server time</div>
